@@ -1,0 +1,48 @@
+{
+    "name": "nadi-pro/nadi-yii",
+    "description": "Nadi monitoring SDK for Yii 3 applications",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "nadi-pro/nadi-php": "^2.0",
+        "psr/container": "^1.0 || ^2.0",
+        "psr/event-dispatcher": "^1.0",
+        "psr/http-server-middleware": "^1.0",
+        "yiisoft/config": "^1.0",
+        "yiisoft/yii-console": "^2.0",
+        "yiisoft/yii-event": "^2.0",
+        "yiisoft/yii-http": "^1.0"
+    },
+    "suggest": {
+        "yiisoft/db": "Required for database query monitoring",
+        "yiisoft/yii-queue": "Required for queue job monitoring"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15",
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nadi\\Yii\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nadi\\Yii\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit",
+        "format": "@php vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "tbachert/spi": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
