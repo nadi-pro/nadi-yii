@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(composer config:*)",
-      "Bash(composer update:*)"
+      "Bash(composer update:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(markdownlint:*)"
     ]
   }
 }

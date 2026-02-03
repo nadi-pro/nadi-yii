@@ -125,6 +125,10 @@ yii nadi:update-shipper
 composer test
 ```
 
+## Documentation
+
+See the full [documentation](docs/README.md) for architecture details, configuration reference, and API documentation.
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
