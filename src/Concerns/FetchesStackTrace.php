@@ -29,7 +29,7 @@ trait FetchesStackTrace
     protected function ignoredPaths(): array
     {
         return [
-            DIRECTORY_SEPARATOR . 'vendor',
+            DIRECTORY_SEPARATOR.'vendor',
         ];
     }
 }

@@ -19,7 +19,7 @@ class Framework extends Base
     protected function getYiiVersion(): string
     {
         // Yii 3 uses individual package versions
-        $composerLock = dirname(__DIR__, 5) . '/composer.lock';
+        $composerLock = dirname(__DIR__, 5).'/composer.lock';
         if (file_exists($composerLock)) {
             $lock = json_decode(file_get_contents($composerLock), true);
             foreach ($lock['packages'] ?? [] as $package) {

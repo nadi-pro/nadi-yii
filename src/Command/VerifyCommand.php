@@ -28,7 +28,7 @@ class VerifyCommand extends Command
 
         // Check enabled
         $enabled = $config['enabled'] ?? false;
-        $output->writeln('Enabled: ' . ($enabled ? '<info>Yes</info>' : '<comment>No</comment>'));
+        $output->writeln('Enabled: '.($enabled ? '<info>Yes</info>' : '<comment>No</comment>'));
 
         // Check driver
         $driver = $config['driver'] ?? 'log';
@@ -71,7 +71,7 @@ class VerifyCommand extends Command
 
             return ExitCode::UNSPECIFIED_ERROR;
         } catch (\Exception $e) {
-            $output->writeln('<error>Verification error: ' . $e->getMessage() . '</error>');
+            $output->writeln('<error>Verification error: '.$e->getMessage().'</error>');
 
             return ExitCode::UNSPECIFIED_ERROR;
         }

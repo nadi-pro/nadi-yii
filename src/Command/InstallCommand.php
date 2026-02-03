@@ -25,8 +25,8 @@ class InstallCommand extends Command
         $output->writeln('<info>Installing Nadi Monitoring...</info>');
 
         // Copy default config
-        $configSource = dirname(__DIR__, 2) . '/config/params.php';
-        $configDest = $this->rootPath . '/config/packages/nadi/params.php';
+        $configSource = dirname(__DIR__, 2).'/config/params.php';
+        $configDest = $this->rootPath.'/config/packages/nadi/params.php';
 
         if (! file_exists($configDest)) {
             if (! is_dir(dirname($configDest))) {
@@ -48,7 +48,7 @@ class InstallCommand extends Command
             $shipper->install();
             $output->writeln('<info>Shipper binary installed successfully.</info>');
         } catch (\Exception $e) {
-            $output->writeln('<comment>Could not install shipper: ' . $e->getMessage() . '</comment>');
+            $output->writeln('<comment>Could not install shipper: '.$e->getMessage().'</comment>');
         }
 
         $output->writeln('');

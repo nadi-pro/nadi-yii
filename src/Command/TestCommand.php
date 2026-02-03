@@ -45,7 +45,7 @@ class TestCommand extends Command
 
             return ExitCode::UNSPECIFIED_ERROR;
         } catch (\Exception $e) {
-            $output->writeln('<error>Connection test failed: ' . $e->getMessage() . '</error>');
+            $output->writeln('<error>Connection test failed: '.$e->getMessage().'</error>');
 
             return ExitCode::UNSPECIFIED_ERROR;
         }

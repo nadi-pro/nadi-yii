@@ -31,7 +31,7 @@ class UpdateShipperCommand extends Command
 
             return ExitCode::OK;
         } catch (\Exception $e) {
-            $output->writeln('<error>Failed to update shipper: ' . $e->getMessage() . '</error>');
+            $output->writeln('<error>Failed to update shipper: '.$e->getMessage().'</error>');
 
             return ExitCode::UNSPECIFIED_ERROR;
         }

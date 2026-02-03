@@ -2,7 +2,6 @@
 
 namespace Nadi\Yii\Middleware;
 
-use Nadi\Support\OpenTelemetrySemanticConventions;
 use Nadi\Yii\Nadi;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
