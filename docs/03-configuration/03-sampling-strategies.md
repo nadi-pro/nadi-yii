@@ -29,7 +29,7 @@ Samples a fixed percentage of all events.
 
 | Key             | Type    | Default | Description                                   |
 |-----------------|---------|---------|-----------------------------------------------|
-| `sampling_rate` | `float` | `0.1`   | Rate between 0.0 (none) and 1.0 (all)        |
+| `sampling_rate` | `float` | `0.1`   | Rate between 0.0 (none) and 1.0 (all)         |
 
 ### Dynamic Rate
 
